@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
     createParticles();
 });
 
+
+
 // Particle background effect
 function createParticles() {
     const particlesContainer = document.getElementById('particles');
