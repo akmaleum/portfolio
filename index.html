@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal Hisyam - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Akmal Hisyam</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-container" id="particles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight typewriter" id="typewriter">Akmal</span>
+                </h1>
+                <h2 class="hero-subtitle">Junior Frontend Developer</h2>
+                <p class="hero-description">
+                    I build exceptional digital experiences that combine beautiful design with powerful functionality.
+                    Fresh graduate passionate about modern web technologies and user-centered development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image-container">
+                    <img src="assets/headshot.png" alt="Akmal Hisyam" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate frontend developer who believes in the power of clean, efficient code and
+                        intuitive user experiences. I specialize in building responsive, accessible, and performant
+                        web applications that users love to interact with.
+                    </p>
+                    <p>
+                        My approach combines modern development practices with a keen eye for design, ensuring that
+                        every project I work on not only functions flawlessly but also looks and feels exceptional.
+                    </p>
+                    <div class="skills">
+                        <h3>Skills & Expertise</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>PHP</li>
+                                    <li>Dart</li>
+                                    <li>SQL</li>
+                                    <li>React (learning)</li>
+                                    <li>Node.js (learning)</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-tools"></i> Technical Skills</h4>
+                                <ul>
+                                    <li>Microsoft Office</li>
+                                    <li>VS Code</li>
+                                    <li>IntelliJ IDEA</li>
+                                    <li>Flutter</li>
+                                    <li>Android Studio</li>
+                                    <li>GitHub</li>
+                                    <li>Wordpress</li>
+                                    <li>Canva</li>
+                                    <li>AI Tools</li>
+                                    <li>Social Media</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-users"></i> Soft Skills</h4>
+                                <ul>
+                                    <li>Active Listening</li>
+                                    <li>Creativity</li>
+                                    <li>Communication</li>
+                                    <li>Ability To Work Under Pressure</li>
+                                    <li>Ability To Work in Teams</li>
+                                    <li>Adaptability</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4><i class="fas fa-language"></i> Languages</h4>
+                                <ul>
+                                    <li>Malay (Native)</li>
+                                    <li>English (Intermediate)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>FYP Digital Library</h3>
+                        <p>A digital library that allows UUM Students to search for books and borrow them.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akmaleum/FYP-Digital-Library" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>BookBytes Mobile App</h3>
+                        <p>A digital library that allows UUM Students to search for books and borrow them.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akmaleum/BookBytes" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Loan Calculator</h3>
+                        <p>A simple loan calculator that helps users calculate the monthly payment for a loan based on
+                            the loan amount, interest rate, and loan term.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akmaleum/Loan-Calculator" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bus Tracking System</h3>
+                        <p>A bus tracking system that allows UUM Students and Staffs to track the location of a bus in
+                            real-time.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akmaleum/Bus-Tracking-Website" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card disabled">
+                    <div class="project-image">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Java Telegram Bot</h3>
+                        <p>A Telegram bot that retrieves weather information for users. Built with Java and integrates
+                            with weather APIs.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Telegram API</span>
+                            <span class="tech-tag">Weather API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/akmaleum/java-telegram-bot" target="_blank"
+                                rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <!-- <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item" data-status="completed">
+                    <div class="experience-header">
+                        <div class="experience-status">
+                            <span class="status-indicator completed"></span>
+                            <span class="status-text">Completed</span>
+                        </div>
+                        <div class="experience-date">Oct 2021 - Present</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Bachelor of Science (Hons) Information Technology</h3>
+                        <h4>Universiti Utara Malaysia (UUM)</h4>
+                        <p class="experience-summary">Major in Software Engineering with focus on modern web development
+                            and software engineering principles.</p>
+                        <div class="experience-details">
+                            <p>Currently pursuing degree with strong academic performance and active participation in
+                                various projects and extracurricular activities.</p>
+                            <div class="achievements">
+                                <span class="achievement">CGPA: 3.16</span>
+                                <span class="achievement">Software Engineering Major</span>
+                                <span class="achievement">Cisco CCNA Badge (2023)</span>
+                            </div>
+                            <div class="project-highlights">
+                                <h5>Key Projects:</h5>
+                                <ul>
+                                    <li><strong>Final Year Project:</strong> Digital Library for Islamic Studies, Masjid
+                                        Al-A'la, Jitra</li>
+                                    <li><strong>Mini Projects:</strong></li>
+                                    <ul>
+                                        <li>Java Telegram Bot to Retrieve Weather Information</li>
+                                        <li>Loan Calculator Application</li>
+                                        <li>Book Shop Application (BookBytes)</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="extracurricular">
+                                <h5>Extracurricular:</h5>
+                                <p>Media Exco for UUM Frisbee Club</p>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleExperience(this)">
+                            <span class="expand-text">Show Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-status="current">
+                    <div class="experience-header">
+                        <div class="experience-status">
+                            <span class="status-indicator current"></span>
+                            <span class="status-text">Current</span>
+                        </div>
+                        <div class="experience-date">March - September 2025</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Information Technology Intern</h3>
+                        <h4>EDUMi Sdn. Bhd.</h4>
+                        <p class="experience-summary">Assisted in developing and maintaining company website using HTML,
+                            CSS and JavaScript to improve user experience.</p>
+                        <div class="experience-details">
+                            <p>Collaborated with supervisor to apply minor UI improvements based on user feedback.
+                                Optimized page load speed by implementing image optimization, resulting in faster
+                                loading times.</p>
+                            <div class="achievements">
+                                <span class="achievement">HTML/CSS/JavaScript</span>
+                                <span class="achievement">UI/UX Improvements</span>
+                                <span class="achievement">Performance Optimization</span>
+                            </div>
+                            <div class="additional-responsibilities">
+                                <h5>Additional Responsibilities:</h5>
+                                <ul>
+                                    <li>Participated in education fairs across Malaysia (Jom Masuk U 2025), promoting
+                                        the company's education programs to prospective students and parents</li>
+                                    <li>Assisted in digital marketing initiatives, including creating posters, recording
+                                        podcasts, and producing TikTok videos to increase brand awareness</li>
+                                    <li>Supported content planning and social media scheduling to align with company
+                                        campaigns</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleExperience(this)">
+                            <span class="expand-text">Show Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="experience-item" data-status="completed">
+                    <div class="experience-header">
+                        <div class="experience-status">
+                            <span class="status-indicator other"></span>
+                            <span class="status-text">N/A</span>
+                        </div>
+                        <div class="experience-date">-</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Freelance Web Developer</h3>
+                        <h4>Self-Employed</h4>
+                        <p class="experience-summary">Built custom websites for small businesses and startups.</p>
+                        <div class="experience-details">
+                            <p>Managed client relationships and delivered projects on time and within budget.
+                                Specialized in responsive design and modern web technologies. Worked with various
+                                clients across different industries.</p>
+                            <div class="achievements">
+                                <span class="achievement">Client Management</span>
+                                <span class="achievement">Project Delivery</span>
+                                <span class="achievement">Problem Solving</span>
+                            </div>
+                        </div>
+                        <button class="expand-btn" onclick="toggleExperience(this)">
+                            <span class="expand-text">Show Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd
+                        like to work together or just want to say hello!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>akmalhisyamriza@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+6012 515 8123</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ipoh, Perak</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">
+                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Opening WhatsApp...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/akmalhisyamriza" target="_blank" rel="noopener noreferrer"
+                    class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/akmaleum" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com/akmaleum" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/bukanhisyam" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="X">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://tiktok.com/@akmaleum" target="_blank" rel="noopener noreferrer" class="social-link"
+                    title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Akmal Hisyam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
