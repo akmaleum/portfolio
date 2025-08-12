@@ -15,19 +15,40 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }));
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+// Basic navigation without scroll effects
+document.addEventListener('DOMContentLoaded', function () {
+    // Navigation links
+    const navLinks = [
+        { href: '#home' },
+        { href: '#about' },
+        { href: '#projects' },
+        { href: '#experience' },
+        { href: '#contact' }
+    ];
+
+    navLinks.forEach(link => {
+        const anchor = document.querySelector(`a[href="${link.href}"]`);
+        if (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetSection = document.querySelector(link.href);
+                if (targetSection) {
+                    // Calculate scroll position
+                    const targetPosition = targetSection.offsetTop - 80; // Account for navbar height
+
+                    // Instant scroll to section
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'auto'
+                    });
+                }
             });
         }
     });
 });
+
+
 
 // Typewriter effect
 function typeWriter(element, text, speed = 100) {
@@ -314,49 +335,7 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Intersection Observer for animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
-        }
-    });
-}, observerOptions);
-
-// Observe elements for animation
-document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.project-card, .timeline-item, .skill-category');
-    animateElements.forEach(el => {
-        observer.observe(el);
-    });
-});
-
-// Smooth reveal animations for sections
-function revealOnScroll() {
-    const elements = document.querySelectorAll('.project-card, .timeline-item, .skill-category');
-
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-
-        if (elementTop < window.innerHeight - elementVisible) {
-            element.classList.add('fade-in-up');
-        }
-    });
-}
-
-// Add scroll event listener
-window.addEventListener('scroll', revealOnScroll);
-
-// Initialize reveal on page load
-document.addEventListener('DOMContentLoaded', () => {
-    revealOnScroll();
-});
 
 // Vercel-style hover effects for project cards
 document.querySelectorAll('.project-card').forEach(card => {
