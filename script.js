@@ -50,35 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Typewriter effect
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.textContent = '';
-
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-
-    type();
-}
-
-// Initialize typewriter effect when page loads
+// Initialize particles when page loads
 document.addEventListener('DOMContentLoaded', function () {
-    const typewriterElement = document.getElementById('typewriter');
-    if (typewriterElement) {
-        const originalText = typewriterElement.textContent;
-        typewriterElement.textContent = '';
-
-        // Start typing after a short delay
-        setTimeout(() => {
-            typeWriter(typewriterElement, originalText, 150);
-        }, 1000);
-    }
-
     // Initialize particles
     createParticles();
 });
